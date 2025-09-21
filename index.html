@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Average Finder</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+
+    <style>
+        body {
+        background: beige;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .container {
+        background: white;
+        text-align: center;
+        display: flex;
+        width: 320px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        flex-direction: column;   
+        align-items: center;      
+    }
+    h1 {
+        color: black;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    input {
+        font-size: 16px;
+        margin: 10px 0;
+        width: 90%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+    button {
+        background: blue;
+        color: white;
+        margin: 15px 0;
+        width: 95%;
+        padding: 10px;
+        border-radius: 6px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button:hover {
+        background: blue;
+    }
+    #result {
+        font-weight: bold;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    </style>
+    </head>
+<body>
+
+
+   <div class="container">
+    <h1>Simple Average Finder</h1>
+    <input type="number" id="score1" min="0" max="100" placeholder="Enter quiz 1 score">
+    <input type="number" id="score2" min="0" max="100" placeholder="Enter quiz 2 score">
+    <button py-click="compute_average">Compute</button>
+    <div id="result"></div>
+  </div> 
+
+    <script type="py" src="main.py"></script>
+    
+</body>
+</html>
